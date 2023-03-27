@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="BitPluto"/>
+        <meta name="theme-color" content="#343a40">
+        <title>:)</title>
+        <style>
+            body {
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background: #343a40;
+                background: linear-gradient(45deg, #343a40, #55606a);
+                background-attachment: fixed;
+                color: white;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            #spin {
+                width: 250px;
+                max-width: 100%;
+                font-size: 6em;
+                font-weight: bold;
+                text-shadow: #000000 0 0 30px;
+                animation: spin .1s linear infinite;
+            }
+            @keyframes spin {
+                from {transform: rotate(0deg);}
+                to {transform: rotate(360deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <span id="spin">:)</span>
+		<script>
+			function randomNumber(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			if (randomNumber(1, 99) == 69) {
+				document.getElementById("spin").innerHTML = "-_-";
+				document.title = "-_-";
+			}
+		</script>
+    </body>
+</html>
